@@ -61,13 +61,13 @@ npm install native-base --save
 react-native link
 ```
 
-## Common Errors
+## 🍝 Common Errors 
 * Make sure singing profile/team is set in iOS!
 * Any package issue, try to remove and add all modules first: `rm -rf node_modules && npm install`
 * Also, make sure to link: react-native link
 * If a package doesn't link right for iOS: drag packages xcodeproj file to Libraries, and then link manually
 
-## JavaScript & ES6, Most used concepts 🍎
+## 🍎 JavaScript & ES6, Most used concepts 
 * Higher-order functions: Map, filter, forEach and reduce
 ```
 coming soon
@@ -88,16 +88,24 @@ let someSwitch = true;
 someSwitch ? console.log('on') : console.log('off');
 ```
 
-## Icons & App Store Images 📸
+## 📸 Icons & App Store Images 
 * iOS icons: Icon set creator: https://itunes.apple.com/us/app/icon-set-creator/id939343785?mt=12
 * Android icons: https://romannurik.github.io/AndroidAssetStudio/index.html
 * App Store Images: App Toolkit (Paid, free for one project): https://apptoolkit.io/
 
-## Testing 🥽
+## 🥽 Testing 
 Virtual Real-Device testing:
 * Andriod, Samsung Remote Test Lab (Free): https://developer.samsung.com/rtlLanding.do
 * iOS and Android, BrowserStack Interactive Mobile App Testing (Paid, free trial): https://www.browserstack.com/app-live
 * iOS, Testflight
+
+## 📈 Bash Scripts 
+The bash scripts I use to speed up my development
+* To edit these, turn on hidden files (Command + Shift + Period on Mac), and then open the `.bash_profile` file in your user folder.
+* `alias projectName="cd projects && cd ProjectName && code . && react-native run-ios"` // one stop shop to open a dev env
+* `alias run-i8p="react-native run-ios --simulator="iPhone 8 Plus"`
+* `alias run-se="react-native run-ios --simulator="iPhone SE"`
+* `alias assemble-android="./gradlew assembleRelease"` // more sure you `cd` into `android` before running this one
 
 
 
