@@ -1,18 +1,19 @@
 # react-native-cheatsheet
 A cheat sheet for building production-ready react-native apps, based on my personal notes
+🔥 This is a work in progress 🔥
 
-## Setup
+## Setup 🚧
 * Create a project:
 ``` react-native init MyAppName
 ```
 
-## Dev Envirobment ✍️
+## Dev Envirobment ⛰
 * Run in iOS Simulator
 ```
 react-native run-ios
 ```
 
-## State Management, Persistance, and Middleware
+## State Management, Persistance, and Middleware 🗂
 * Redux + 
 * https://github.com/reduxjs/redux-thunk
 * 
@@ -21,7 +22,7 @@ react-native run-ios
 
 ```
 
-## Production Ready Packages
+## Production Ready Packages 🏙
 * Formik: https://github.com/jaredpalmer/formik
 ```
 npm install formik --save
@@ -34,18 +35,18 @@ react-native link
 
 
 
-## JavaScript & ES6, Most used concepts
+## JavaScript & ES6, Most used concepts 🍎
 * Higher-order functions: Map, filter, forEach and reduce
 * Destructuring
 * Let & Const
 * The ternary
 
-## Icons & App Store Images
+## Icons & App Store Images 📸
 * iOS icons: 
 * Android icons:
 * App Store Images: 
 
-## Testing
+## Testing 🥽
 Virtual Device testing:
 
 
