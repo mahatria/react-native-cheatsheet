@@ -71,10 +71,21 @@ react-native link
 * Also, make sure to link: react-native link
 * If a package doesn't link right for iOS: drag packages xcodeproj file to Libraries, and then link manually
 
-## 🍎 JavaScript & ES6, Most used concepts 
+## 🍎 Common JavaScript & ES6 Concepts
+* Fat arrow functions
+* Shorthand function that automatically binds this
+```
+let combined = (string1, string2) => { return string1 + ' ' + string2 };
+```
+* Template literals
+```
+console.log("apple" + ' ' + 'banana');
+console.log(${apple banana});
+```
 * Higher-order functions: Map, filter, forEach and reduce
 ```
-coming soon
+[{i: 0, title: 'a'}, {i: 0, title: 'a'}, {i: 0, title: 'a'}].map(item => item.title);
+// ['a', 'b', 'c']
 ```
 * Destructuring
 ```
