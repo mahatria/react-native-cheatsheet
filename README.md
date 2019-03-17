@@ -2,18 +2,20 @@
 A cheat sheet for building production-ready react-native apps, based on my personal notes
 * 🔥 Note: This is a work in progress 🔥
 
-## Docs & Resources 🕵️‍♂️
+## 🕵️‍♂️ Docs & Resources 
 * Offical docs: https://facebook.github.io/react-native/
 * Discord: https://www.reactiflux.com/
 * React Native Crash Course by Traversy Media: https://www.youtube.com/watch?v=mkualZPRZCs
 
-## Project Setup 🚧
+## 🚧 Project Setup & Structure
 * Create a project:
 ``` 
 react-native init MyAppName
 ```
+* Project structure: 
 
-## Dev Environment ⛰
+
+## ⛰ Dev Environment 
 * Run in iOS Simulator
 ```
 react-native run-ios
@@ -22,7 +24,7 @@ react-native run-ios
 * react-native run-ios --simulator=“iPhone X”
 * Options include: iPhone 5s, iPhone 6, iPhone X, iPhone 8, etc.
 
-## State Management, Persistance, and Middleware 🗂
+## 🗂 State Management, Persistance, and Middleware 
 * For large, API-connected projects: 
 * Redux + React+redux + Redux-devtools + Redux-persist + Redux-thunk + axios:
 * Redux: https://github.com/reduxjs/redux
@@ -50,7 +52,7 @@ Redux resources:
 
 * Other options include: Local state only, hooks, mobx
 
-## Production Ready Packages 🏙
+## 🏙 Production Ready Packages 
 * Formik: https://github.com/jaredpalmer/formik
 ```
 npm install formik --save
@@ -60,6 +62,8 @@ npm install formik --save
 npm install native-base --save
 react-native link
 ```
+* React Navigation 
+
 
 ## 🍝 Common Errors 
 * Make sure singing profile/team is set in iOS!
@@ -101,11 +105,11 @@ Virtual Real-Device testing:
 
 ## 📈 Bash Scripts 
 The bash scripts I use to speed up my development
-* To edit these, turn on hidden files (Command + Shift + Period on Mac), and then open the `.bash_profile` file in your user folder.
+* To edit these, turn on hidden files (`Command + Shift + Period` on Mac), and then edit `.bash_profile` in your user folder.
 * `alias projectName="cd projects && cd ProjectName && code . && react-native run-ios"` // one stop shop to open a dev env
 * `alias run-i8p="react-native run-ios --simulator="iPhone 8 Plus"`
 * `alias run-se="react-native run-ios --simulator="iPhone SE"`
-* `alias assemble-android="./gradlew assembleRelease"` // more sure you `cd` into `android` before running this one
+* `alias assemble-android="./gradlew assembleRelease"` // make sure you `cd` into `android` before running this one
 
 
 
