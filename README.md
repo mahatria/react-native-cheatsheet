@@ -5,6 +5,7 @@ A cheat sheet for building production-ready react-native apps, based on my perso
 ## Docs & Resources 🕵️‍♂️
 * Offical docs: https://facebook.github.io/react-native/
 * Discord: https://www.reactiflux.com/
+* React Native Crash Course by Traversy Media: https://www.youtube.com/watch?v=mkualZPRZCs
 
 ## Project Setup 🚧
 * Create a project:
@@ -73,12 +74,16 @@ react-native link
 * The ternary
 
 ## Icons & App Store Images 📸
-* iOS icons: 
-* Android icons:
-* App Store Images: 
+* iOS icons: Icon set creator: https://itunes.apple.com/us/app/icon-set-creator/id939343785?mt=12
+* Android icons: https://romannurik.github.io/AndroidAssetStudio/index.html
+* App Store Images: App Toolkit (Paid, free for one project): https://apptoolkit.io/
 
 ## Testing 🥽
-Virtual Device testing:
+Virtual Real-Device testing:
+* Andriod, Samsung Remote Test Lab (Free): https://developer.samsung.com/rtlLanding.do
+* iOS and Android, BrowserStack Interactive Mobile App Testing (Paid, free trial): https://www.browserstack.com/app-live
+* iOS, Testflight
+
 
 
 
