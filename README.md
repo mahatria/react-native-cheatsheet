@@ -127,6 +127,7 @@ someSwitch ? console.log('on') : console.log('off');
 ```
 coming soon
 ```
+* Promises & Async/Await 
 
 ## 📸 Icons & App Store Images 
 * iOS icons: Icon set creator: https://itunes.apple.com/us/app/icon-set-creator/id939343785?mt=12
