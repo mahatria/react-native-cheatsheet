@@ -62,7 +62,19 @@ npm install formik --save
 npm install native-base --save
 react-native link
 ```
-* React Navigation 
+* React Navigation
+```
+npm install --save react-navigation
+npm install --save react-native-gesture-handler@~1.0.14
+react-native link react-native-gesture-handler
+// + Android steps at: https://reactnavigation.org/docs/en/getting-started.html
+```
+* One Signal: https://github.com/geektimecoil/react-native-onesignal
+```
+npm install --save react-native-onesignal
+react-native link react-native-onesignal
+// + Android steps at: https://documentation.onesignal.com/v5.0/docs/react-native-sdk-setup
+```
 
 
 ## 🍝 Common Errors 
@@ -72,9 +84,9 @@ react-native link
 * If a package doesn't link right for iOS: drag packages xcodeproj file to Libraries, and then link manually
 
 ## 🍎 Common JavaScript & ES6 Concepts
-* Fat arrow functions
-* Shorthand function that automatically binds this
+* (Fat) Arrow functions
 ```
+// Shorthand function that automatically binds this
 let combined = (string1, string2) => { return string1 + ' ' + string2 };
 ```
 * Template literals
@@ -82,25 +94,37 @@ let combined = (string1, string2) => { return string1 + ' ' + string2 };
 console.log("apple" + ' ' + 'banana');
 console.log(${apple banana});
 ```
-* Higher-order functions: Map, filter, forEach and reduce
+* Higher-order functions: map, filter, forEach, reduce
 ```
-[{i: 0, title: 'a'}, {i: 0, title: 'a'}, {i: 0, title: 'a'}].map(item => item.title);
-// ['a', 'b', 'c']
+// Map
+[{i: 0, title: 'a'}, {i: 1, title: 'b'}, {i: 2, title: 'c'}].map(item => item.title);
+// ["a", "b", "c"]
+
+// Filter
+[{i: 0, title: 'a'}, {i: 1, title: 'b'}, {i: 2, title: 'c'}].filter(item => item.title === 'a');
+// returns {i: 0, title: "a"}
 ```
 * Destructuring
 ```
+//
 let { navigation } = this.props;
 navigation.goBack();
 ```
 * Let & Const
 ```
-const LIST_ITEM_HEIGHT = 200; // immutable reference
-let iconColor = '#FF0000'; // block scoped, helps avoid problems with closures
+// variable identifiers, safer than var
+const LIST_ITEM_HEIGHT = 200; // immutable reference, can't be reassigned
+let iconColor = '#FF0000'; // block scoped, can be reassigned, helps avoid problems with closures
 ```
-* The ternary
+* Ternary
 ```
+// shorthand conditional statement, useful in JSX
 let someSwitch = true;
 someSwitch ? console.log('on') : console.log('off');
+```
+* Spread syntax
+```
+coming soon
 ```
 
 ## 📸 Icons & App Store Images 
