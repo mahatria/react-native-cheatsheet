@@ -12,7 +12,7 @@ A cheat sheet for building production-ready react-native apps, based on my perso
 react-native init MyAppName
 ```
 
-## Dev Envirobment ⛰
+## Dev Environment ⛰
 * Run in iOS Simulator
 ```
 react-native run-ios
