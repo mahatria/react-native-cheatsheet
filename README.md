@@ -69,9 +69,24 @@ react-native link
 
 ## JavaScript & ES6, Most used concepts 🍎
 * Higher-order functions: Map, filter, forEach and reduce
+```
+coming soon
+```
 * Destructuring
+```
+let { navigation } = this.props;
+navigation.goBack();
+```
 * Let & Const
+```
+const LIST_ITEM_HEIGHT = 200; // immutable reference
+let iconColor = '#FF0000'; // block scoped, helps avoid problems with closures
+```
 * The ternary
+```
+let someSwitch = true;
+someSwitch ? console.log('on') : console.log('off');
+```
 
 ## Icons & App Store Images 📸
 * iOS icons: Icon set creator: https://itunes.apple.com/us/app/icon-set-creator/id939343785?mt=12
