@@ -75,6 +75,7 @@ npm install --save react-native-onesignal
 react-native link react-native-onesignal
 // + Android steps at: https://documentation.onesignal.com/v5.0/docs/react-native-sdk-setup
 ```
+* Moment + React-Moment 
 
 
 ## 🍝 Common Errors 
