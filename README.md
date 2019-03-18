@@ -1,6 +1,5 @@
 # react-native-cheatsheet
 A cheat sheet for building production-ready react-native apps, based on my personal notes
-* 🔥 Note: This is a work in progress 🔥
 
 ## 🕵️‍♂️ Docs & Resources 
 * Offical docs: https://facebook.github.io/react-native/
@@ -13,8 +12,18 @@ A cheat sheet for building production-ready react-native apps, based on my perso
 react-native init MyAppName
 ```
 * Project structure: 
-
-
+```
+  * App.js
+  * src
+    * assets
+    * common
+    * config
+    * lib
+    * redux
+    * screens
+    * App.js
+ ```
+    
 ## ⛰ Dev Environment 
 * Run in iOS Simulator
 ```
@@ -25,19 +34,22 @@ react-native run-ios
 * Options include: iPhone 5s, iPhone 6, iPhone X, iPhone 8, etc.
 
 ## 🗂 State Management, Persistance, and Middleware 
-* For large, API-connected projects: 
-* Redux + React+redux + Redux-devtools + Redux-persist + Redux-thunk + axios:
-* Redux: https://github.com/reduxjs/redux
-* React-redux: https://react-redux.js.org/
-* Redux-devtools: 
-* Redux-persist: https://github.com/rt2zz/redux-persist
-* Redux-thunk: https://github.com/reduxjs/redux-thunk
-* Axios: https://github.com/axios/axios
+Useful for large, API-connected projects
+* Redux + React+redux + Redux-devtools + Redux-persist + Redux-thunk + axios
+* Other options include: Local state only, hooks, mobx
+
+Packages:
 * redux for global state management
+  * https://github.com/reduxjs/redux
 * react-redux for react + redux bindings
+  * https://react-redux.js.org/
+* Redux-devtools: 
 * redux-thunk for redux middleware to make api calls
+  * https://github.com/reduxjs/redux-thunk
 * redux-persist for persisting & rehydrating stores via asycstorage
+  * https://github.com/rt2zz/redux-persist
 * remote-redux-devtools for using redux devtools with react-native
+* Axios: https://github.com/axios/axios
 ```
 npm install redux --save
 npm install react-redux --save
@@ -49,8 +61,7 @@ npm install axios --save
 
 Redux resources: 
 * What is Redux? https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6 
-
-* Other options include: Local state only, hooks, mobx
+* Redux Crash Course With React by Traversy Media: https://www.youtube.com/watch?v=93p3LxR9xfM
 
 ## 🏙 Production Ready Packages 
 * Formik: https://github.com/jaredpalmer/formik
