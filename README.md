@@ -103,7 +103,9 @@ export default env;
 ```
 
 ## 🏙 Production Ready Packages 
-* Formik: https://github.com/jaredpalmer/formik
+* Formik
+ * Stateless forms
+ * Docs: https://github.com/jaredpalmer/formik
 ```
 npm install formik --save
 ```
