@@ -76,7 +76,7 @@ Other options:
 * mobX
 * etc.
 
-## 🌍 Globals config
+## 🌍 Globals Config
 Globals file structure:
 ```
 // Globals.js
@@ -136,7 +136,7 @@ npm install --save moment react-moment
 * Also, make sure to link: react-native link
 * If a package doesn't link correctly for iOS: drag package's xcodeproj file to Libraries, and then link manually
 
-## 🍎 Common JavaScript & ES6 Concepts
+## 🍎 Common JS & ES6 Concepts
 * (Fat) Arrow functions
 ```
 // Shorthand function that automatically binds this
@@ -155,13 +155,28 @@ console.log(`${fruit1} ${fruit2}`);
 ```
 * Higher-order functions: map, filter, forEach, reduce
 ```
-// Map
+// Functions that take functions as arguments or return functions
+
+// Map: apple a function to each value in an array
 [{i: 0, title: 'a'}, {i: 1, title: 'b'}, {i: 2, title: 'c'}].map(item => item.title);
 // ["a", "b", "c"]
 
-// Filter
+// Filter: filter out certain values in an array
 [{i: 0, title: 'a'}, {i: 1, title: 'b'}, {i: 2, title: 'c'}].filter(item => item.title === 'a');
-// returns {i: 0, title: "a"}
+// {i: 0, title: "a"}
+
+// forEach: loop over each value in an array
+['a', 'b', 'c'].forEach(el => {
+  console.log(el);
+});
+// a b c
+
+// Reduce: reduce an array to a single object
+[0, 1, 2, 3].reduce((total, current) => {
+  return total + current;
+}, 0);
+// 6
+
 ```
 * Destructuring
 ```
