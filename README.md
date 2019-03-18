@@ -110,10 +110,16 @@ npm install --save moment
 // Shorthand function that automatically binds this
 let combined = (string1, string2) => { return string1 + ' ' + string2 };
 ```
-* Template literals
+* Template literals/strings
 ```
-console.log("apple" + ' ' + 'banana');
-console.log(${apple banana});
+let fruit1 = 'apple';
+let fruit2 = 'banana';
+
+// without template literals
+console.log(fruit1 + ' ' + fruit2);
+
+// with template literals
+console.log(`${fruit1} ${fruit2}`);
 ```
 * Higher-order functions: map, filter, forEach, reduce
 ```
@@ -176,6 +182,7 @@ promise.then((result) => {
 ## 🥽 Testing 
 Virtual Real-Device testing:
 * Andriod, Samsung Remote Test Lab (Free): https://developer.samsung.com/rtlLanding.do
+* Android, Firebase Test Lab (Free): https://firebase.google.com/docs/test-lab/
 * iOS and Android, BrowserStack Interactive Mobile App Testing (Paid, free trial): https://www.browserstack.com/app-live
 * iOS, Testflight
 
