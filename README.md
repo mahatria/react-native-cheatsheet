@@ -76,6 +76,32 @@ Other options:
 * mobX
 * etc.
 
+
+## 🌍 Globals config
+Globals file structure:
+```
+// Globals.js
+const mode = 'DEV';
+const ver = '1.0.0'; //SEMVER
+
+// setup env
+let env = {
+  MODE: mode,
+  VERSION: ver
+};
+
+if (mode === 'DEV') {
+  // DEV ENV
+  env.API = 'https://dev.yourAPI.com/api/json/1.0/';
+} else {
+  // PROD ENV
+  env.API = 'https://yourAPI.com/api/json/1.0/';
+}
+
+export default env;
+```
+
+
 ## 🏙 Production Ready Packages 
 * Formik: https://github.com/jaredpalmer/formik
 ```
