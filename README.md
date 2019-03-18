@@ -104,8 +104,8 @@ export default env;
 
 ## 🏙 Production Ready Packages 
 * Formik
- * Stateless forms
- * Docs: https://github.com/jaredpalmer/formik
+  * Stateless forms
+  * Docs: https://github.com/jaredpalmer/formik
 ```
 npm install formik --save
 ```
@@ -221,6 +221,11 @@ promise.then((result) => {
 }, (err) => {
   console.log(err);
 });
+```
+* Import
+```
+// used in place of require 
+import { Platform, Linking } from 'react-native';
 ```
 
 ## 📸 Icons & App Store Images 
