@@ -4,6 +4,7 @@ A cheat sheet for building production-ready react-native apps, based on my perso
 ## 🕵️‍♂️ Docs & Resources 
 * Offical docs: https://facebook.github.io/react-native/
 * Discord: https://www.reactiflux.com/
+* React JS Crash Course - 2019 by Traversy Media: https://www.youtube.com/watch?v=sBws8MSXN7A
 * React Native Crash Course by Traversy Media: https://www.youtube.com/watch?v=mkualZPRZCs
 
 ## 🚧 Project Setup & Structure
@@ -13,15 +14,15 @@ react-native init MyAppName
 ```
 * Project structure: 
 ```
-  * App.js
-  * src
-    * assets
-    * common
-    * config
-    * lib
-    * redux
-    * screens
-    * App.js
+* App.js // root component
+* src
+ * assets // logos, images, sound effects
+ * common // shared components
+ * config // globals
+ * lib // in-house packages, biz logic
+ * redux // reducers, actions, store
+ * screens // containers for each route
+ * App.js // route stacks and app container
  ```
     
 ## ⛰ Dev Environment 
@@ -29,9 +30,14 @@ react-native init MyAppName
 ```
 react-native run-ios
 ```
-
 * react-native run-ios --simulator=“iPhone X”
 * Options include: iPhone 5s, iPhone 6, iPhone X, iPhone 8, etc.
+
+* Run in Android emulator
+1. Open Android Studio
+2. Open a blank project
+3. Go to Tools -> SDK Manager -> Launch an emulator
+4. `react-native run-android`
 
 ## 🗂 State Management, Persistance, and Middleware 
 For large, API-connected projects:
@@ -49,6 +55,8 @@ Packages:
   * https://github.com/rt2zz/redux-persist
 * remote-redux-devtools for using redux devtools with react-native
 * Axios: https://github.com/axios/axios
+
+Install all state management + middleware packages:
 ```
 npm install redux --save
 npm install react-redux --save
@@ -67,7 +75,6 @@ Other options:
 * Hooks
 * mobX
 * etc.
-
 
 ## 🏙 Production Ready Packages 
 * Formik: https://github.com/jaredpalmer/formik
@@ -92,11 +99,10 @@ npm install --save react-native-onesignal
 react-native link react-native-onesignal
 // + Android steps at: https://documentation.onesignal.com/v5.0/docs/react-native-sdk-setup
 ```
-* Moment + React-Moment 
+* Moment + React-Moment: https://github.com/headzoo/react-moment#readme
 ```
-npm install --save moment
+npm install --save moment react-moment
 ```
-
 
 ## 🍝 Common Errors 
 * Make sure singing profile/team is set in iOS!
@@ -193,8 +199,3 @@ The bash scripts I use to speed up my development
 * `alias run-i8p="react-native run-ios --simulator="iPhone 8 Plus"`
 * `alias run-se="react-native run-ios --simulator="iPhone SE"`
 * `alias assemble-android="./gradlew assembleRelease"` // make sure you `cd` into `android` before running this one
-
-
-
-
-
