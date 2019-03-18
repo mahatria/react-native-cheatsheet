@@ -34,9 +34,8 @@ react-native run-ios
 * Options include: iPhone 5s, iPhone 6, iPhone X, iPhone 8, etc.
 
 ## 🗂 State Management, Persistance, and Middleware 
-Useful for large, API-connected projects
+For large, API-connected projects:
 * Redux + React+redux + Redux-devtools + Redux-persist + Redux-thunk + axios
-* Other options include: Local state only, hooks, mobx
 
 Packages:
 * redux for global state management
@@ -63,6 +62,13 @@ Redux resources:
 * What is Redux? https://code-cartoons.com/a-cartoon-intro-to-redux-3afb775501a6 
 * Redux Crash Course With React by Traversy Media: https://www.youtube.com/watch?v=93p3LxR9xfM
 
+Other options:
+* Local state only
+* Hooks
+* mobX
+* etc.
+
+
 ## 🏙 Production Ready Packages 
 * Formik: https://github.com/jaredpalmer/formik
 ```
@@ -87,13 +93,16 @@ react-native link react-native-onesignal
 // + Android steps at: https://documentation.onesignal.com/v5.0/docs/react-native-sdk-setup
 ```
 * Moment + React-Moment 
+```
+npm install --save moment
+```
 
 
 ## 🍝 Common Errors 
 * Make sure singing profile/team is set in iOS!
 * Any package issue, try to remove and add all modules first: `rm -rf node_modules && npm install`
 * Also, make sure to link: react-native link
-* If a package doesn't link right for iOS: drag packages xcodeproj file to Libraries, and then link manually
+* If a package doesn't link correctly for iOS: drag package's xcodeproj file to Libraries, and then link manually
 
 ## 🍎 Common JavaScript & ES6 Concepts
 * (Fat) Arrow functions
@@ -118,7 +127,7 @@ console.log(${apple banana});
 ```
 * Destructuring
 ```
-//
+// Make copy of items from object & assign to variable
 let { navigation } = this.props;
 navigation.goBack();
 ```
@@ -136,9 +145,28 @@ someSwitch ? console.log('on') : console.log('off');
 ```
 * Spread syntax
 ```
-coming soon
+// Allows an iterable to "spread"/expand
+let object = {id: 18, name: "My Object", nickname: "obji"}
+// {id: 18, name: "My Object", nickname: "obji"}
+let updatedObject2 = Object.assign({...object, nickname: 'myobj'}, {});
+// {id: 18, name: "My Object", nickname: “myobji”}
 ```
-* Promises & Async/Await 
+* Promises & Async/Await
+```
+// create a promise
+let promise = new Promise((resolve, reject) => { 
+  // perfrom asyc call
+  let success = true; 
+  (success ? resolve('success') : reject('error'));
+ });
+
+// call a promise
+promise.then((result) => {
+  console.log(result);
+}, (err) => {
+  console.log(err);
+});
+```
 
 ## 📸 Icons & App Store Images 
 * iOS icons: Icon set creator: https://itunes.apple.com/us/app/icon-set-creator/id939343785?mt=12
