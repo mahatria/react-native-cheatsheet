@@ -76,7 +76,6 @@ Other options:
 * mobX
 * etc.
 
-
 ## 🌍 Globals config
 Globals file structure:
 ```
@@ -93,14 +92,15 @@ let env = {
 if (mode === 'DEV') {
   // DEV ENV
   env.API = 'https://dev.yourAPI.com/api/json/1.0/';
+  // anything else you need for dev
 } else {
   // PROD ENV
   env.API = 'https://yourAPI.com/api/json/1.0/';
+  // anything else you need for prod
 }
 
 export default env;
 ```
-
 
 ## 🏙 Production Ready Packages 
 * Formik: https://github.com/jaredpalmer/formik
