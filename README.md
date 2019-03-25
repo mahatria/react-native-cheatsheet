@@ -132,7 +132,7 @@ react-native link react-native-onesignal
 npm install --save moment react-moment
 ```
 
-### Caching Images
+### 📽 Caching Images
 ```
 https://github.com/fungilation/react-native-cached-image
 
