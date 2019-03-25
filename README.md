@@ -178,6 +178,7 @@ RCT_EXPORT_METHOD(setAppIcon:(NSString *)name)
         }
     }
 }
+```
 
 icons:
 - In the root xCode projects, create a directory called `icons`
