@@ -179,6 +179,33 @@ RCT_EXPORT_METHOD(setAppIcon:(NSString *)name)
     }
 }
 
+icons:
+- In the root xCode projects, create a directory called `icons`
+- Add 2 files for each altnerate icon, IconName@2x.png (120 x 120 px) and IconName@3x.png (180 x 180 px)
+- In `Info.plist`:
+```
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundleAlternateIcons</key>
+		<dict>
+			<key>IconName</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>icons/IconName</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>CFBundlePrimaryIcon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>AppIcon</string>
+				</array>
+			</dict>
+		</dict>
+	</dict>
 ```
 
 ## 🍝 Common Errors 
