@@ -132,6 +132,27 @@ react-native link react-native-onesignal
 npm install --save moment react-moment
 ```
 
+### Caching Images
+```
+https://github.com/fungilation/react-native-cached-image
+
+npm install fungilation/react-native-cached-image —save
+npm install --save rn-fetch-blob
+react-native link rn-fetch-blob
+RNFB_ANDROID_PERMISSIONS=true react-native link 
+
+Manually link in iOS if need be 
+
+Usage:
+import { CachedImage } from 'react-native-cached-image';
+
+<CachedImage
+ style={ {width: 100, height: 100 }}
+ source={{ uri: someSource }}
+/>
+
+```
+
 ## 🍝 Common Errors 
 * Make sure singing profile/team is set in iOS!
 * Any package issue, try to remove and add all modules first: `rm -rf node_modules && npm install`
