@@ -132,7 +132,7 @@ react-native link react-native-onesignal
 npm install --save moment react-moment
 ```
 
-### 📽 Caching Images
+## 📽 Caching Images
 ```
 https://github.com/fungilation/react-native-cached-image
 
@@ -150,6 +150,34 @@ import { CachedImage } from 'react-native-cached-image';
  style={ {width: 100, height: 100 }}
  source={{ uri: someSource }}
 />
+
+```
+
+## 📱 Alternate App Icons (iOS Only)
+Package: https://github.com/idearockers/react-native-dynamic-app-icon
+
+To hide the system alert, update DNDynamicAppIcon.m:
+```
+RCT_EXPORT_METHOD(setAppIcon:(NSString *)name)
+{
+    // hide apple system alert on icon change
+    if ([[UIApplication sharedApplication] respondsToSelector:@selector(supportsAlternateIcons)] &&
+        [[UIApplication sharedApplication] supportsAlternateIcons])
+    {
+        NSMutableString *selectorString = [[NSMutableString alloc] initWithCapacity:40];
+        [selectorString appendString:@"_setAlternate"];
+        [selectorString appendString:@"IconName:"];
+        [selectorString appendString:@"completionHandler:"];
+        
+        SEL selector = NSSelectorFromString(selectorString);
+        IMP imp = [[UIApplication sharedApplication] methodForSelector:selector];
+        void (*func)(id, SEL, id, id) = (void *)imp;
+        if (func)
+        {
+            func([UIApplication sharedApplication], selector, name, ^(NSError * _Nullable error) {});
+        }
+    }
+}
 
 ```
 
