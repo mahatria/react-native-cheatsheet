@@ -55,6 +55,7 @@ npm update --save-dev
 check outdated packages
 ```
 npm outdated
+npm install --save package-name@0.0.0
 ```
 
 ## 🗂 State Management, Persistance, and Middleware 
