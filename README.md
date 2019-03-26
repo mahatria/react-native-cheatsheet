@@ -326,6 +326,13 @@ promise.then((result) => {
 import { Platform, Linking } from 'react-native';
 ```
 
+## 🔌 Reset iOS and Android directories
+* If you need to reset your iOS and Android projects entirely, due to linking issues, package cleanup, etc.
+	* delete iOS and Android dirs
+	* react-native eject
+	* react-native link
+	* Add back any custom code (production build process, push notification logic, app icons, splash screens, etc)
+
 ## 📸 Icons & App Store Images 
 * iOS icons: Icon set creator: https://itunes.apple.com/us/app/icon-set-creator/id939343785?mt=12
 * Android icons: https://romannurik.github.io/AndroidAssetStudio/index.html
