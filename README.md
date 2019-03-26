@@ -44,17 +44,18 @@ react-native run-ios
 4. `react-native run-android`
 
 ## 📦 Package Management w/ NPM
-update packages:
+* update packages: 
+* Note: will only update packages in respect to semver, to avoid breaking changes
 ```
 npm update --save
-```
-update dev packages:
-```
 npm update --save-dev
 ```
-check outdated packages
+* list outdated packages
 ```
 npm outdated
+```
+* Update a specific package to a specific version:
+```
 npm install --save package-name@0.0.0
 ```
 
