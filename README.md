@@ -57,6 +57,7 @@ npm outdated
 * Update a specific package to a specific version:
 ```
 npm install --save package-name@0.0.0
+npm install --save-dev package-name@0.0.0
 ```
 
 ## 🗂 State Management, Persistance, and Middleware 
