@@ -39,6 +39,20 @@ react-native run-ios
 3. Go to Tools -> SDK Manager -> Launch an emulator
 4. `react-native run-android`
 
+## 📦 Package Management w/ NPM
+update packages:
+```
+npm update --save
+```
+update dev packages:
+```
+npm update --save-dev
+```
+check outdated packages
+```
+npm outdated
+```
+
 ## 🗂 State Management, Persistance, and Middleware 
 For large, API-connected projects:
 * Redux + React+redux + Redux-devtools + Redux-persist + Redux-thunk + axios
