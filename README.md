@@ -24,6 +24,10 @@ react-native init MyAppName
  * screens // containers for each route
  * App.js // route stacks and app container
  ```
+ * Updating reaact native:
+ ```
+ react-native upgrade
+```
     
 ## ⛰ Dev Environment 
 * Run in iOS Simulator
