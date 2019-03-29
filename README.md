@@ -32,6 +32,8 @@ A cheat sheet for building production-ready react-native apps, based on my perso
 * [Icons & App Store Images]
 * [Testing]
 
+# Getting Started
+
 ## 🤔 What is React-Native?
 * React-Native is a framework for building native iOS and Android apps using React. 
 
