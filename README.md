@@ -62,6 +62,18 @@ react-native init MyAppName
  ```
  react-native upgrade
 ```
+
+## 🧰 Tooling
+My preferred tools for React-Native development:
+* [VS Code](https://code.visualstudio.com/) + the following extensions:
+	* Prettier
+	* ES7 React/Redux/GraphQL/React-Native snippets
+	* Bracket Pair Colorizer
+	* VSCode Great Icons
+* Xcode, latest, comes installed on Mac
+* [Android Studio](https://developer.android.com/studio)
+* [Postman](https://www.getpostman.com/) for API testing
+* [SourceTree](https://www.sourcetreeapp.com/) for Github management
     
 ## ⛰ Dev Environment 
 * Run in iOS Simulator
