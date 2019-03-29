@@ -7,11 +7,14 @@ A cheat sheet for building production-ready react-native apps, based on my perso
 ### Getting Started
 * What is React-Native?
 * [Docs & Resources](https://github.com/joeyscarim/react-native-cheatsheet/blob/master/README.md#%EF%B8%8F%EF%B8%8F-docs--resources)
-* [Project Setup & Structure]()
+* [Project Setup & Structure](https://github.com/joeyscarim/react-native-cheatsheet/blob/master/README.md#-project-setup--structure)
 ### Development Environment
 ### Packages
 ### Troubleshooting
 ### Publishing 
+
+## 🤔 What is React-Native?
+* React-Native is a framework for building native iOS and Android apps using React. 
 
 ## 🕵️‍♂️ Docs & Resources 
 * Offical docs: https://facebook.github.io/react-native/
