@@ -62,10 +62,18 @@ npm install --save-dev package-name@0.0.0
 
 ## 🗂 State Management, Persistance, and Middleware 
 
-For large, API-connected projects:
-* Redux + React+redux + Redux-devtools + Redux-persist + Redux-thunk + axios
+There are a lot of ways to handle data, state, and middleware in React. The popular options include local state, redux, hooks, and mobx. Each of these have their pros and cons. For smaller apps/apps with less data, local state and/or hooks are typically preferred. For larger, API-connected projects, Redux is the preferred way of handling state. Redux can also be combined with local state and/or hooks for smaller components.
 
-What is redux?
+I typically use the following packages for handling state, persistance, and middleware:
+* Redux + React+redux + Redux-devtools + Redux-persist + Redux-thunk + axios
+* Redux-sagas is also a popular way for handling middleware in Redux
+
+### What is redux?
+
+Redux is an architecture pattern for handling the flow of data in an app. It is often contrasted with the MVC pattern, another common pattern for data handling. 
+
+In Redux, you have a single "store" that houses all of your data, and data always flows in one direction. The diagram below shows how data flows in Redux: 
+
 ![redux diagram](https://raw.githubusercontent.com/joeyscarim/react-native-cheatsheet/master/assets/redux.gif)
 
 Packages:
