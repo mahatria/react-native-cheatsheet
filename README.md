@@ -61,8 +61,12 @@ npm install --save-dev package-name@0.0.0
 ```
 
 ## 🗂 State Management, Persistance, and Middleware 
+
 For large, API-connected projects:
 * Redux + React+redux + Redux-devtools + Redux-persist + Redux-thunk + axios
+
+What is redux?
+https://raw.githubusercontent.com/joeyscarim/react-native-cheatsheet/master/assets/redux.gif
 
 Packages:
 * redux for global state management
