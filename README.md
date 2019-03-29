@@ -6,8 +6,8 @@ A cheat sheet for building production-ready react-native apps, based on my perso
 ### 🚨 The table of contents is coming soon, and not connected yet
 ### Getting Started
 * What is React-Native?
-* Docs & Resources
-* Project Setup & Structure
+* [Docs & Resources](https://github.com/joeyscarim/react-native-cheatsheet/blob/master/README.md#%EF%B8%8F%EF%B8%8F-docs--resources)
+* [Project Setup & Structure]()
 ### Development Environment
 ### Packages
 ### Troubleshooting
