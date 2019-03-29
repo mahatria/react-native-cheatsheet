@@ -65,6 +65,124 @@ react-native init MyAppName
  react-native upgrade
 ```
 
+## 🌍 Globals Config
+Globals file structure:
+```
+// Globals.js
+const mode = 'DEV';
+const ver = '1.0.0'; //SEMVER
+
+// setup env
+let env = {
+  MODE: mode,
+  VERSION: ver
+};
+
+if (mode === 'DEV') {
+  // DEV ENV
+  env.API = 'https://dev.yourAPI.com/api/json/1.0/';
+  // anything else you need for dev
+} else {
+  // PROD ENV
+  env.API = 'https://yourAPI.com/api/json/1.0/';
+  // anything else you need for prod
+}
+
+export default env;
+```
+
+## 🍎 Common JS & ES6 Concepts
+* (Fat) Arrow functions
+```
+// Shorthand function that automatically binds this
+let combined = (string1, string2) => { return string1 + ' ' + string2 };
+```
+* Template literals/strings
+```
+let fruit1 = 'apple';
+let fruit2 = 'banana';
+
+// without template literals
+console.log(fruit1 + ' ' + fruit2);
+
+// with template literals
+console.log(`${fruit1} ${fruit2}`);
+```
+* Higher-order functions: map, filter, forEach, reduce
+```
+// Functions that take functions as arguments or return functions
+
+// Map: apple a function to each value in an array
+[{i: 0, title: 'a'}, {i: 1, title: 'b'}, {i: 2, title: 'c'}].map(item => item.title);
+// ["a", "b", "c"]
+
+// Filter: filter out certain values in an array
+[{i: 0, title: 'a'}, {i: 1, title: 'b'}, {i: 2, title: 'c'}].filter(item => item.title === 'a');
+// {i: 0, title: "a"}
+
+// forEach: loop over each value in an array
+['a', 'b', 'c'].forEach(el => {
+  console.log(el);
+});
+// a b c
+
+// Reduce: reduce an array to a single object
+[0, 1, 2, 3].reduce((total, current) => {
+  return total + current;
+}, 0);
+// 6
+
+```
+* Destructuring
+```
+// Make copy of items from object & assign to variable
+let { navigation } = this.props;
+navigation.goBack();
+```
+* Let & Const
+```
+// variable identifiers, safer than var
+const LIST_ITEM_HEIGHT = 200; // immutable reference, can't be reassigned
+let iconColor = '#FF0000'; // block scoped, can be reassigned, helps avoid problems with closures
+```
+* Ternary
+```
+// shorthand conditional statement, useful in JSX
+let someSwitch = true;
+someSwitch ? console.log('on') : console.log('off');
+```
+* Spread syntax
+```
+// Allows an iterable to "spread"/expand
+let object = {id: 18, name: "My Object", nickname: "obji"}
+// {id: 18, name: "My Object", nickname: "obji"}
+let updatedObject2 = Object.assign({...object, nickname: 'myobj'}, {});
+// {id: 18, name: "My Object", nickname: “myobji”}
+```
+* Promises & Async/Await
+```
+// create a promise
+let promise = new Promise((resolve, reject) => { 
+  // perfrom asyc call
+  let success = true; 
+  (success ? resolve('success') : reject('error'));
+ });
+
+// call a promise
+promise.then((result) => {
+  console.log(result);
+}, (err) => {
+  console.log(err);
+});
+```
+* Import
+```
+// used in place of require 
+import { Platform, Linking } from 'react-native';
+```
+
+# Development Environment
+
 ## 🧰 Tooling
 My preferred tools for React-Native development:
 * [VS Code](https://code.visualstudio.com/) + the following extensions:
@@ -90,6 +208,14 @@ react-native run-ios
 2. Open a blank project
 3. Go to Tools -> SDK Manager -> Launch an emulator
 4. `react-native run-android`
+
+## 📈 Bash Scripts 
+The bash scripts I use to speed up my development
+* To edit these, turn on hidden files (`Command + Shift + Period` on Mac), and then edit `.bash_profile` in your user folder.
+* `alias projectName="cd projects && cd ProjectName && code . && react-native run-ios"` // one stop shop to open a dev env
+* `alias run-i8p="react-native run-ios --simulator="iPhone 8 Plus"`
+* `alias run-se="react-native run-ios --simulator="iPhone SE"`
+* `alias assemble-android="./gradlew assembleRelease"` // make sure you `cd` into `android` before running this one
 
 ## 📦 Package Management w/ NPM
 * update packages: 
@@ -157,31 +283,7 @@ Other options:
 * mobX
 * etc.
 
-## 🌍 Globals Config
-Globals file structure:
-```
-// Globals.js
-const mode = 'DEV';
-const ver = '1.0.0'; //SEMVER
 
-// setup env
-let env = {
-  MODE: mode,
-  VERSION: ver
-};
-
-if (mode === 'DEV') {
-  // DEV ENV
-  env.API = 'https://dev.yourAPI.com/api/json/1.0/';
-  // anything else you need for dev
-} else {
-  // PROD ENV
-  env.API = 'https://yourAPI.com/api/json/1.0/';
-  // anything else you need for prod
-}
-
-export default env;
-```
 
 ## 🏙 Production Ready Packages 
 * Formik
@@ -290,101 +392,13 @@ icons:
 	</dict>
 ```
 
+# Troubleshooting
+
 ## 🍝 Common Errors 
 * Make sure singing profile/team is set in iOS!
 * Any package issue, try to remove and add all modules first: `rm -rf node_modules && npm install`
 * Also, make sure to link: react-native link
 * If a package doesn't link correctly for iOS: drag package's xcodeproj file to Libraries, and then link manually
-
-## 🍎 Common JS & ES6 Concepts
-* (Fat) Arrow functions
-```
-// Shorthand function that automatically binds this
-let combined = (string1, string2) => { return string1 + ' ' + string2 };
-```
-* Template literals/strings
-```
-let fruit1 = 'apple';
-let fruit2 = 'banana';
-
-// without template literals
-console.log(fruit1 + ' ' + fruit2);
-
-// with template literals
-console.log(`${fruit1} ${fruit2}`);
-```
-* Higher-order functions: map, filter, forEach, reduce
-```
-// Functions that take functions as arguments or return functions
-
-// Map: apple a function to each value in an array
-[{i: 0, title: 'a'}, {i: 1, title: 'b'}, {i: 2, title: 'c'}].map(item => item.title);
-// ["a", "b", "c"]
-
-// Filter: filter out certain values in an array
-[{i: 0, title: 'a'}, {i: 1, title: 'b'}, {i: 2, title: 'c'}].filter(item => item.title === 'a');
-// {i: 0, title: "a"}
-
-// forEach: loop over each value in an array
-['a', 'b', 'c'].forEach(el => {
-  console.log(el);
-});
-// a b c
-
-// Reduce: reduce an array to a single object
-[0, 1, 2, 3].reduce((total, current) => {
-  return total + current;
-}, 0);
-// 6
-
-```
-* Destructuring
-```
-// Make copy of items from object & assign to variable
-let { navigation } = this.props;
-navigation.goBack();
-```
-* Let & Const
-```
-// variable identifiers, safer than var
-const LIST_ITEM_HEIGHT = 200; // immutable reference, can't be reassigned
-let iconColor = '#FF0000'; // block scoped, can be reassigned, helps avoid problems with closures
-```
-* Ternary
-```
-// shorthand conditional statement, useful in JSX
-let someSwitch = true;
-someSwitch ? console.log('on') : console.log('off');
-```
-* Spread syntax
-```
-// Allows an iterable to "spread"/expand
-let object = {id: 18, name: "My Object", nickname: "obji"}
-// {id: 18, name: "My Object", nickname: "obji"}
-let updatedObject2 = Object.assign({...object, nickname: 'myobj'}, {});
-// {id: 18, name: "My Object", nickname: “myobji”}
-```
-* Promises & Async/Await
-```
-// create a promise
-let promise = new Promise((resolve, reject) => { 
-  // perfrom asyc call
-  let success = true; 
-  (success ? resolve('success') : reject('error'));
- });
-
-// call a promise
-promise.then((result) => {
-  console.log(result);
-}, (err) => {
-  console.log(err);
-});
-```
-* Import
-```
-// used in place of require 
-import { Platform, Linking } from 'react-native';
-```
 
 ## 🔌 Reset iOS and Android directories
 * If you need to reset your iOS and Android projects entirely, due to linking issues, package cleanup, etc.
@@ -392,6 +406,8 @@ import { Platform, Linking } from 'react-native';
 	* react-native eject
 	* react-native link
 	* Add back any custom code (production build process, push notification logic, app icons, splash screens, etc)
+
+# Testing & Publishing
 
 ## 📸 Icons & App Store Images 
 * iOS icons: Icon set creator: https://itunes.apple.com/us/app/icon-set-creator/id939343785?mt=12
@@ -404,11 +420,3 @@ Virtual Real-Device testing:
 * Android, Firebase Test Lab (Free): https://firebase.google.com/docs/test-lab/
 * iOS and Android, BrowserStack Interactive Mobile App Testing (Paid, free trial): https://www.browserstack.com/app-live
 * iOS, Testflight
-
-## 📈 Bash Scripts 
-The bash scripts I use to speed up my development
-* To edit these, turn on hidden files (`Command + Shift + Period` on Mac), and then edit `.bash_profile` in your user folder.
-* `alias projectName="cd projects && cd ProjectName && code . && react-native run-ios"` // one stop shop to open a dev env
-* `alias run-i8p="react-native run-ios --simulator="iPhone 8 Plus"`
-* `alias run-se="react-native run-ios --simulator="iPhone SE"`
-* `alias assemble-android="./gradlew assembleRelease"` // make sure you `cd` into `android` before running this one
