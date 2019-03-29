@@ -1,36 +1,35 @@
 # react-native-cheatsheet
-A cheat sheet for building production-ready react-native apps, based on my personal notes
+A cheat sheet for building production-ready react-native apps, based on my personal notes.
 
 ## 📓 Table of Contents
 
-### 🚨 The table of contents is coming soon, and not connected yet
 ### Getting Started
 * [What is React-Native?](https://github.com/joeyscarim/react-native-cheatsheet#-what-is-react-native)
 * [Docs & Resources](https://github.com/joeyscarim/react-native-cheatsheet#%EF%B8%8F%EF%B8%8F-docs--resources)
 * [Project Setup & Structure](https://github.com/joeyscarim/react-native-cheatsheet#-project-setup--structure)
-* [Globals Config]()
-* [Common JS & ES6 Concepts]()
+* [Globals Config](https://github.com/joeyscarim/react-native-cheatsheet#-globals-config)
+* [Common JS & ES6 Concepts](https://github.com/joeyscarim/react-native-cheatsheet#-common-js--es6-concepts)
 ### Development Environment
-* [Tooling]() Coming soon
+* [Tooling](https://github.com/joeyscarim/react-native-cheatsheet#-common-js--es6-concepts)
 * [Dev Environment](https://github.com/joeyscarim/react-native-cheatsheet#-dev-environment)
-* [Bash Scripts]() Coming soon
+* [Bash Scripts](https://github.com/joeyscarim/react-native-cheatsheet#-bash-scripts)
 ### Packages
-* [Package Management w/ NPM]
-* [Production Ready Packages]
-* [Image Caching]
-* [Alternate App Icons (iOS Only)]
-### State Management, Persistance, and Middleware 
+* [Package Management w/ NPM](https://github.com/joeyscarim/react-native-cheatsheet#-package-management-w-npm)
+* [Production Ready Packages](https://github.com/joeyscarim/react-native-cheatsheet#-production-ready-packages)
+* [Image Caching](https://github.com/joeyscarim/react-native-cheatsheet#-caching-images)
+* [Alternate App Icons (iOS Only)](https://github.com/joeyscarim/react-native-cheatsheet#-alternate-app-icons-ios-only)
+### State Management, Persistance, and Middleware (section under construction 🏗)
 * [Overview]
 * [Redux]
 * [Hooks]
 * [Persistance]
 * [Middleware]
 ### Troubleshooting
-* [Common Errors]
-* [Reset iOS and Android directories]
+* [Common Errors](https://github.com/joeyscarim/react-native-cheatsheet#-common-errors)
+* [Reset iOS and Android directories](https://github.com/joeyscarim/react-native-cheatsheet#-reset-ios-and-android-directories)
 ### Testing & Publishing 
-* [Icons & App Store Images]
-* [Testing]
+* [Icons & App Store Images](https://github.com/joeyscarim/react-native-cheatsheet#-icons--app-store-images)
+* [Testing](https://github.com/joeyscarim/react-native-cheatsheet#-testing)
 
 # Getting Started
 
