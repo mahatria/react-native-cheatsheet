@@ -5,13 +5,32 @@ A cheat sheet for building production-ready react-native apps, based on my perso
 
 ### 🚨 The table of contents is coming soon, and not connected yet
 ### Getting Started
-* What is React-Native?
-* [Docs & Resources](https://github.com/joeyscarim/react-native-cheatsheet/blob/master/README.md#%EF%B8%8F%EF%B8%8F-docs--resources)
-* [Project Setup & Structure](https://github.com/joeyscarim/react-native-cheatsheet/blob/master/README.md#-project-setup--structure)
+* [What is React-Native?](https://github.com/joeyscarim/react-native-cheatsheet#-what-is-react-native)
+* [Docs & Resources](https://github.com/joeyscarim/react-native-cheatsheet#%EF%B8%8F%EF%B8%8F-docs--resources)
+* [Project Setup & Structure](https://github.com/joeyscarim/react-native-cheatsheet#-project-setup--structure)
+* [Globals Config]()
+* [Common JS & ES6 Concepts]()
 ### Development Environment
+* [Tooling]() Coming soon
+* [Dev Environment](https://github.com/joeyscarim/react-native-cheatsheet#-dev-environment)
+* [Bash Scripts]() Coming soon
 ### Packages
+* [Package Management w/ NPM]
+* [Production Ready Packages]
+* [Image Caching]
+* [Alternate App Icons (iOS Only)]
+### State Management, Persistance, and Middleware 
+* [Overview]
+* [Redux]
+* [Hooks]
+* [Persistance]
+* [Middleware]
 ### Troubleshooting
-### Publishing 
+* [Common Errors]
+* [Reset iOS and Android directories]
+### Testing & Publishing 
+* [Icons & App Store Images]
+* [Testing]
 
 ## 🤔 What is React-Native?
 * React-Native is a framework for building native iOS and Android apps using React. 
