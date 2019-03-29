@@ -1,6 +1,18 @@
 # react-native-cheatsheet
 A cheat sheet for building production-ready react-native apps, based on my personal notes
 
+## 📓 Table of Contents
+
+### 🚨 The table of contents is coming soon, and not connected yet
+### Getting Started
+* What is React-Native?
+* Docs & Resources
+* Project Setup & Structure
+### Development Environment
+### Packages
+### Troubleshooting
+### Publishing 
+
 ## 🕵️‍♂️ Docs & Resources 
 * Offical docs: https://facebook.github.io/react-native/
 * Discord: https://www.reactiflux.com/
