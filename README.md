@@ -92,6 +92,8 @@ export default env;
 ```
 
 ## 🍎 Common JS & ES6 Concepts
+These are the most common JS concepts that you will see throughout any React or React-Native project.
+
 * (Fat) Arrow functions
 ```
 // Shorthand function that automatically binds this
