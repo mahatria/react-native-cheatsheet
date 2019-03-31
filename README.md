@@ -6,6 +6,7 @@ A cheat sheet for building production-ready react-native apps, based on my perso
 ### Getting Started
 * [What is React-Native?](https://github.com/joeyscarim/react-native-cheatsheet#-what-is-react-native)
 * [Docs & Resources](https://github.com/joeyscarim/react-native-cheatsheet#%EF%B8%8F%EF%B8%8F-docs--resources)
+* [react-native init vs Expo]()
 * [Project Setup & Structure](https://github.com/joeyscarim/react-native-cheatsheet#-project-setup--structure)
 * [Globals Config](https://github.com/joeyscarim/react-native-cheatsheet#-globals-config)
 * [Common JS & ES6 Concepts](https://github.com/joeyscarim/react-native-cheatsheet#-common-js--es6-concepts)
@@ -41,6 +42,9 @@ A cheat sheet for building production-ready react-native apps, based on my perso
 * Discord: https://www.reactiflux.com/
 * React JS Crash Course - 2019 by Traversy Media: https://www.youtube.com/watch?v=sBws8MSXN7A
 * React Native Crash Course by Traversy Media: https://www.youtube.com/watch?v=mkualZPRZCs
+
+## react-native-init vs. Expo
+* coming soon
 
 ## 🚧 Project Setup & Structure
 * Create a project:
