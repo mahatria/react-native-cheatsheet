@@ -425,3 +425,18 @@ Virtual Real-Device testing:
 * Android, Firebase Test Lab (Free): https://firebase.google.com/docs/test-lab/
 * iOS and Android, BrowserStack Interactive Mobile App Testing (Paid, free trial): https://www.browserstack.com/app-live
 * iOS, Testflight
+
+## Testing with Jest
+Resources:
+* https://www.youtube.com/watch?v=7r4xVDI2vho
+* https://www.youtube.com/watch?v=D9DdY2WmM-s
+
+How to run Jest:
+* `jest --watchAll`
+	* Watches and runs all `.test.js` files 
+
+Example assertion:
+```
+test(‘truthy test', () => {
+  expect(true).toBeTruthy(); //assertion
+  ```
