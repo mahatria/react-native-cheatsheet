@@ -453,8 +453,8 @@ Snapshots:
 * Checks to make sure that code hasn’t changed
 
 Resources:
-* https://www.youtube.com/watch?v=7r4xVDI2vho
-* https://www.youtube.com/watch?v=D9DdY2WmM-s
+* Jest Crash Course by Travery Media: https://www.youtube.com/watch?v=7r4xVDI2vho
+* React Testing for Beginners by LevelUpTuts: https://www.youtube.com/watch?v=D9DdY2WmM-s
 
 How to run Jest:
 * `jest --watchAll`
