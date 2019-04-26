@@ -438,6 +438,20 @@ Virtual Real-Device testing:
 * iOS, Testflight
 
 ## Testing with Jest
+What is Jest:
+* jestjs.io
+* A test runner for JavaScript created by Facebook
+* Has become more popular than its competitors Mocha, chai, etc.
+* Finds any files with .test.js and runs them
+* Test runner, assertion library, and mocking functions
+
+Jest Methods:
+* Jest has a bunch of assertion methods
+* Describe, test, require, etc.
+
+Snapshots:
+* Checks to make sure that code hasn’t changed
+
 Resources:
 * https://www.youtube.com/watch?v=7r4xVDI2vho
 * https://www.youtube.com/watch?v=D9DdY2WmM-s
