@@ -186,6 +186,17 @@ promise.then((result) => {
 import { Platform, Linking } from 'react-native';
 ```
 
+# React Concepts (work in progress)
+
+## Hooks
+(coming soon)
+
+## Class based vs functional components
+(coming soon)
+
+## Higher Order Components (HOCs)
+(coming soon)
+
 # Development Environment
 
 ## 🧰 Tooling
