@@ -206,8 +206,11 @@ My preferred tools for React-Native development:
 	* ES7 React/Redux/GraphQL/React-Native snippets
 	* Bracket Pair Colorizer
 	* VSCode Great Icons
+	* Live Server
+	* Turbo Console Log
+		* I remap `Display` to: `shift + alt + l` in `Code -> Preferences -> Keyboard Shortcuts`
 * Xcode, latest, comes installed on Mac
-* [Android Studio](https://developer.android.com/studio)
+* [Android Studio](https://developer.android.com/studio) for Android SDK and emulation
 * [Postman](https://www.getpostman.com/) for API testing
 * [SourceTree](https://www.sourcetreeapp.com/) for Github management
     
