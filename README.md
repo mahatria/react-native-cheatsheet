@@ -468,3 +468,18 @@ Example assertion:
 test(‘truthy test', () => {
   expect(true).toBeTruthy(); //assertion
   ```
+  
+Unit tests:
+```
+// unit tests: only tests one thing
+// in this cases, tests the 'add' function
+// want to test multile scenarions to avoid false positives
+test('add', () => {
+  const value = add(1, 2);
+  expect(value).toBe(3); //assertion
+  expect(value).toEqual(3);
+  expect(add(0, 7)).toBeGreaterThan(2);
+  expect(add(-1, 4)).toBeGreaterThanOrEqual(3);
+  expect(add(-1, 5)).toBeCloseTo(4);
+});
+```
