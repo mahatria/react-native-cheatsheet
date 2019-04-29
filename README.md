@@ -483,3 +483,14 @@ test('add', () => {
   expect(add(-1, 5)).toBeCloseTo(4);
 });
 ```
+
+Integration tests:
+```
+// https://www.youtube.com/watch?v=52-QICDljww
+// integration tests: test a function that relies on another function
+// in this case, the total function calls the add function
+test('total', () => {
+  expect(total(5, 20)).toBe('$25');
+  expect(total(-5, 20)).toEqual('$15');
+});
+```
