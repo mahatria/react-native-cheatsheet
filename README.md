@@ -486,11 +486,26 @@ test('add', () => {
 
 Integration tests:
 ```
-// https://www.youtube.com/watch?v=52-QICDljww
 // integration tests: test a function that relies on another function
 // in this case, the total function calls the add function
 test('total', () => {
   expect(total(5, 20)).toBe('$25');
   expect(total(-5, 20)).toEqual('$15');
+});
+```
+
+Mock function:
+```
+// mock function
+// a fake function that gives you a result
+// can be sync, async, return data, etc.
+// can even load a function from a dependency, and turn it into a mock
+const add = jest.fn(() => 3);
+
+// unit tests
+test('add', () => {
+  expect(add(1, 2)).toBe(3); //assertion
+  expect(add).toHaveBeenCalledTimes(1);
+  expect(add).toHaveBeenCalledWith(1, 2);
 });
 ```
