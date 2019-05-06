@@ -189,7 +189,22 @@ import { Platform, Linking } from 'react-native';
 # React Concepts (work in progress)
 
 ## Hooks
-(coming soon)
+Function components come with no state at all, but the useState hook allows us to add little nuggets of state as we need them. So if all we need is a single boolean, we can create a bit of state to hold that.
+
+- DONT replace classes. Theyre just a new option
+- Allow you to add state to a functional component
+
+`import React, { useState } from 'react';`
+
+
+Resources:
+- https://daveceddia.com/intro-to-hooks/
+- https://daveceddia.com/intro-to-hooks/#rules-of-hooks
+
+The useState hook takes the initial state as an argument (we passed false) and it returns an array with 2 elements: the current state, and a function to change the state.
+
+— start playing with google play subscriptions
+— see what data is returned
 
 ## Class based vs functional components
 (coming soon)
