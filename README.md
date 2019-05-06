@@ -335,10 +335,12 @@ npm install --save moment react-moment
 ```
 
 ## 📽 Caching Images
+This is getting updated:
+https://github.com/kfiroo/react-native-cached-image/issues/160
 ```
 https://github.com/fungilation/react-native-cached-image
 
-npm install fungilation/react-native-cached-image —save
+npm install fungilation/react-native-cached-image --save
 npm install --save rn-fetch-blob
 react-native link rn-fetch-blob
 RNFB_ANDROID_PERMISSIONS=true react-native link 
