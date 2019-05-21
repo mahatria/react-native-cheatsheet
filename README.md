@@ -349,6 +349,10 @@ react-native link react-native-onesignal
 npm install --save moment react-moment
 ```
 
+* React Native Snap Carousel
+* React Native Circular Progress
+* Victory Native
+
 ## 📽 Caching Images
 This is getting updated:
 https://github.com/kfiroo/react-native-cached-image/issues/160
