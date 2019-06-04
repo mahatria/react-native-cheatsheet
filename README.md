@@ -354,6 +354,9 @@ npm install --save moment react-moment
 * Victory Native
 
 ## 📽 Caching Images
+Check this out instead! start here!
+https://github.com/DylanVann/react-native-fast-image
+
 This is getting updated:
 https://github.com/kfiroo/react-native-cached-image/issues/160
 ```
