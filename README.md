@@ -17,7 +17,6 @@ A cheat sheet for building production-ready react-native apps, based on my perso
 ### Packages
 * [Package Management w/ NPM](https://github.com/joeyscarim/react-native-cheatsheet#-package-management-w-npm)
 * [Production Ready Packages](https://github.com/joeyscarim/react-native-cheatsheet#-production-ready-packages)
-* [Image Caching](https://github.com/joeyscarim/react-native-cheatsheet#-caching-images)
 * [Alternate App Icons (iOS Only)](https://github.com/joeyscarim/react-native-cheatsheet#-alternate-app-icons-ios-only)
 ### State Management, Persistance, and Middleware (section under construction 🏗)
 * [Overview]
@@ -352,32 +351,9 @@ npm install --save moment react-moment
 * React Native Snap Carousel
 * React Native Circular Progress
 * Victory Native
+* React Native Fast Image (for image caching)
 
-## 📽 Caching Images
-Check this out instead! start here!
-https://github.com/DylanVann/react-native-fast-image
 
-This is getting updated:
-https://github.com/kfiroo/react-native-cached-image/issues/160
-```
-https://github.com/fungilation/react-native-cached-image
-
-npm install fungilation/react-native-cached-image --save
-npm install --save rn-fetch-blob
-react-native link rn-fetch-blob
-RNFB_ANDROID_PERMISSIONS=true react-native link 
-
-Manually link in iOS if need be 
-
-Usage:
-import { CachedImage } from 'react-native-cached-image';
-
-<CachedImage
- style={ {width: 100, height: 100 }}
- source={{ uri: someSource }}
-/>
-
-```
 
 ## 📱 Alternate App Icons (iOS Only)
 Package: https://github.com/idearockers/react-native-dynamic-app-icon
