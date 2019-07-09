@@ -353,6 +353,11 @@ npm install --save moment react-moment
 * Victory Native
 * React Native Fast Image (for image caching)
 
+* Animation
+- Pose
+- Spring
+- Animatable 
+
 
 
 ## 📱 Alternate App Icons (iOS Only)
@@ -422,6 +427,8 @@ icons:
 * Any package issue, try to remove and add all modules first: `rm -rf node_modules && npm install`
 * Also, make sure to link: react-native link
 * If a package doesn't link correctly for iOS: drag package's xcodeproj file to Libraries, and then link manually
+* If a flatlist is losing position due to the keyboard being displayed, use the prop `disableKBDismissScroll={true}` on parent ScrollView/Content component
+
 
 ## 🔌 Reset iOS and Android directories
 * If you need to reset your iOS and Android projects entirely, due to linking issues, package cleanup, etc.
