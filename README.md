@@ -57,7 +57,7 @@ react-native init MyAppName
  * assets // logos, images, sound effects
  * common // shared components
  * config // globals
- * lib // in-house packages, biz logic
+ * lib // in-house, biz logic
  * redux // reducers, actions, store
  * screens // containers for each route
  * App.js // route stacks and app container
@@ -316,7 +316,11 @@ Other options:
 * mobX
 * etc.
 
-
+## ⏫ Upgrading to new RN versions
+* Upgrade helper tool
+  * https://react-native-community.github.io/upgrade-helper/
+* Upgrade guide
+  * https://facebook.github.io/react-native/docs/upgrading
 
 ## 🏙 Production Ready Packages 
 * Formik
