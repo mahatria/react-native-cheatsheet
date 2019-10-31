@@ -433,6 +433,12 @@ Icons:
 * If a package doesn't link correctly for iOS: drag package's xcodeproj file to Libraries, and then link manually
 * If a flatlist is losing position due to the keyboard being displayed, use the prop `disableKBDismissScroll={true}` on parent ScrollView/Content component
 
+## Understanding the Google ecosystem
+* Google Play Console - Manage app releases, app store listings, reviews, etc
+* Google Developer Console - Access Google APIs 
+* Google Firebase - Push notifications, analytics, cloudstore, hosting, user system, etc
+* Google Cloud - the "backbone" of Google firebase
+
 
 ## 🔌 Reset iOS and Android directories
 * If you need to reset your iOS and Android projects entirely, due to linking issues, package cleanup, etc.
@@ -442,6 +448,11 @@ Icons:
 	* Add back any custom code (production build process, push notification logic, app icons, splash screens, etc)
 
 # Testing & Publishing
+
+## Building for production
+* Android, follow the guide at https://facebook.github.io/react-native/docs/signed-apk-android
+* `cd android && ./gradlew assembleRelease` to create an apk / android package 
+* `cd android && ./gradlew bundleRelease` to create an aab / android app bundle
 
 ## 📸 Icons & App Store Images 
 * iOS icons: Icon set creator: https://itunes.apple.com/us/app/icon-set-creator/id939343785?mt=12
