@@ -245,17 +245,22 @@ My preferred tools for React-Native development:
     
 ## ⛰ Dev Environment 
 * Run in iOS Simulator
-```
-react-native run-ios
-```
-* react-native run-ios --simulator=“iPhone X”
-* Options include: iPhone 5s, iPhone 6, iPhone X, iPhone 8, etc.
+1. `react-native run-ios` from the project root
+2. OR `react-native run-ios --simulator=“iPhone X”`
+	- Options include: iPhone 5s, iPhone 6, iPhone X, iPhone 8, etc.
 
 * Run in Android emulator
 1. Open Android Studio
 2. Open a blank project
 3. Go to Tools -> SDK Manager -> Launch an emulator
-4. `react-native run-android`
+4. `react-native run-android` from the project root
+
+* Run on connected Android devices
+1. Plug in device
+2. `adb devices`: make sure the device is listed
+3. `react-native run-android` from the project root
+4. Shake the device or `adb shell input keyevent KEYCODE_MENU` to display the developer menu
+5. React Native Debugger will work like normal with the connected device
 
 ## 📈 Bash Scripts 
 The bash scripts I use to speed up my development
@@ -382,31 +387,11 @@ npm install --save moment react-moment
 ## 📱 Alternate App Icons (iOS Only)
 Package: https://github.com/idearockers/react-native-dynamic-app-icon
 
-To hide the system alert, update DNDynamicAppIcon.m:
-```
-RCT_EXPORT_METHOD(setAppIcon:(NSString *)name)
-{
-    // hide apple system alert on icon change
-    if ([[UIApplication sharedApplication] respondsToSelector:@selector(supportsAlternateIcons)] &&
-        [[UIApplication sharedApplication] supportsAlternateIcons])
-    {
-        NSMutableString *selectorString = [[NSMutableString alloc] initWithCapacity:40];
-        [selectorString appendString:@"_setAlternate"];
-        [selectorString appendString:@"IconName:"];
-        [selectorString appendString:@"completionHandler:"];
-        
-        SEL selector = NSSelectorFromString(selectorString);
-        IMP imp = [[UIApplication sharedApplication] methodForSelector:selector];
-        void (*func)(id, SEL, id, id) = (void *)imp;
-        if (func)
-        {
-            func([UIApplication sharedApplication], selector, name, ^(NSError * _Nullable error) {});
-        }
-    }
-}
-```
+Notes: 
+- The user must manually choose the icon they want to change to
+- You must show the icon changed alert
 
-icons:
+Icons:
 - In the root xCode projects, create a directory called `icons`
 - Add 2 files for each altnerate icon, IconName@2x.png (120 x 120 px) and IconName@3x.png (180 x 180 px)
 - In `Info.plist`:
