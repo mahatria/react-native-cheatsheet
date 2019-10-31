@@ -205,6 +205,21 @@ The useState hook takes the initial state as an argument (we passed false) an
 — start playing with google play subscriptions
 — see what data is returned
 
+## Immutability / Immer
+- React state should be treated as immutable
+- setState, Immer, Spread, Object.assign()
+- Easier debugging, safer updates, rerendering
+
+## Suspense
+" the new feature allows you to defer rendering part of your application tree until some condition is met (for example data from an endpoint or a resource is loaded)."
+https://medium.com/@baphemot/understanding-react-suspense-1c73b4b0b1e6
+
+## Context API
+"Context provides a way to pass data through the component tree without having to pass props down manually at every level."
+https://reactjs.org/docs/context.html
+
+## Redux
+
 ## Class based vs functional components
 (coming soon)
 
