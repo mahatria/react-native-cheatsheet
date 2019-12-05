@@ -342,6 +342,67 @@ Other options:
 * Upgrade guide
   * https://facebook.github.io/react-native/docs/upgrading
 
+## 📼 Video Player
+Note: This setup is based on a portrait only app, with fullscreen video playback in landscape only (android) or landscape + portrait options (ios)
+
+* Packages
+  * `react-native-video`: https://github.com/react-native-community/react-native-video
+  	- the core video player
+  * `react-native-video-controls`: https://github.com/itsnubix/react-native-video-controls
+  	- video controls for Android (at time of writing this, exoplayer support is not yet finished on react-native-video package)
+  * `react-native-orientation-locker`: https://github.com/wonday/react-native-orientation-locker
+  	- for locking landscape mode on Android, when fullscreen is true
+	
+iOS setup:
+* no need to complete the orientation-locker setup on ios
+* import and use react-native-video as reccomended
+* make sure app is locked to portait only mode in xcode
+* there is a bug when switching from fullscreen portait -> landscape -> portait, where the screen gets cut off. to resolve this, in node_modules/react-native-video-/ios/Video/RCTVideo.m, comment out the setFrame bounds call starting at line 708:
+```
+        // if (!CGRectEqualToRect(oldRect, newRect)) {
+        //   if (CGRectEqualToRect(newRect, [UIScreen mainScreen].bounds)) {
+        //     NSLog(@"in fullscreen");
+        //   } else NSLog(@"not fullscreen");
+
+        //   [self.reactViewController.view setFrame:[UIScreen mainScreen].bounds];
+        //   [self.reactViewController.view setNeedsLayout];
+        // }
+```
+now the app won't attempt to switch to landscape mode and back, and itll still allow the video to play in fullscreen landscape mode.
+
+Android setup:
+* Do the orientation-locker setup
+* in app.js, lock your app to portait mode:
+```
+  componentDidMount() {
+    // lock android to portrait, in video fullscreen, this is changed
+    Orientation.lockToPortrait();
+  }
+``` 
+* In your VideoPlayer implementation, When you enter fullscreen, lock app to landscape mode, and then back to portait mode when you exit fullscreen mode:
+```
+<VideoPlayer
+                      source={{
+                        uri: video_url,
+                      }}
+                      onEnterFullscreen={() =>
+                     
+                          Orientation.lockToLandscapeLeft() //this will lock the view to Landscape
+                      
+                      }
+                      onExitFullscreen={() =>
+                        Orientation.lockToPortrait()
+                        
+                      }
+                      disableBack={true}
+                      resizeMode="contain"
+                   
+                      toggleResizeModeOnFullscreen={false}
+                
+                    />
+```
+* For fullscreen to work, you also need to either play the video on a fullsize page, or update your view to be fullsize when you enter fullscreen mode.
+
 ## 🏙 Production Ready Packages 
 * Formik
   * Stateless forms
