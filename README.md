@@ -37,7 +37,7 @@ A cheat sheet for building production-ready react-native apps, based on my perso
 * React-Native is a framework for building native iOS and Android apps using React. 
 
 ## 🕵️‍♂️ Docs & Resources 
-* Offical docs: https://facebook.github.io/react-native/
+* Offical docs & blog: https://facebook.github.io/react-native/
 * Discord: https://www.reactiflux.com/
 * React JS Crash Course - 2019 by Traversy Media: https://www.youtube.com/watch?v=sBws8MSXN7A
 * React Native Crash Course by Traversy Media: https://www.youtube.com/watch?v=mkualZPRZCs
