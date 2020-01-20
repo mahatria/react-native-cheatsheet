@@ -448,6 +448,9 @@ npm install --save moment react-moment
 * React Native Circular Progress
 * Victory Native
 * React Native Fast Image (for image caching)
+* React-native-elements
+* styled-components
+
 
 * Animation
 - Pose
