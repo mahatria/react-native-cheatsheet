@@ -43,7 +43,12 @@ A cheat sheet for building production-ready react-native apps, based on my perso
 * React Native Crash Course by Traversy Media: https://www.youtube.com/watch?v=mkualZPRZCs
 
 ## react-native-init vs. Expo
-* coming soon
+* react-native-init
+- Full react-native experience
+* Expo has limitations: https://docs.expo.io/versions/latest/introduction/why-not-expo/
+- No IAP, bluetooth, etc. support
+- Must be connected to internet while developing
+- Doesn't support "linked" packages (some third party packages can't be used)
 
 ## 🚧 Project Setup & Structure
 * Create a project:
