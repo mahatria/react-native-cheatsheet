@@ -41,6 +41,7 @@ A cheat sheet for building production-ready react-native apps, based on my perso
 * Discord: https://www.reactiflux.com/
 * React JS Crash Course - 2019 by Traversy Media: https://www.youtube.com/watch?v=sBws8MSXN7A
 * React Native Crash Course by Traversy Media: https://www.youtube.com/watch?v=mkualZPRZCs
+* (NEW!) React Native Crash Course 2020 by Travery Media: https://www.youtube.com/watch?v=Hf4MJH0jDb4
 
 ## react-native-init vs. Expo
 * react-native-init
